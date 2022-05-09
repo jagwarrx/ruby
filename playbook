@@ -1,0 +1,75 @@
+
+number = 7
+puts 7 > 5 # true
+puts number >= 2 * (1+2) #true
+number == 8 # false
+number += 2 # number = 9
+(2 + 2) != number # true 
+puts 20 % 6 # 2
+
+# ternary
+# if_true ? do_this : else_do_this
+(2+2 == 4) ? (puts "yep") : (puts "nop")
+# assign stuff
+today = 'Sunday'
+slogan = (today == 'Friday') ? 'TGIF' : 'we like moondays too'
+puts (slogan)
+
+# if variable doesnt exist assign something
+curr_number ||= number
+
+# do or not do based on something
+# if [expression] .. else.. .. end 
+# find the truthy expression
+# jobs to be done : comparison, assignment, math
+if number > 5
+  puts "number greater than 5"
+elsif number == 5 && (3 > 2)
+  puts "number is 5 and your math is correct"
+else  
+  puts "number is lower than 5"
+end
+
+my_name = "bob!"
+your_name = "alice"
+puts my_name.length > your_name.length # false
+
+username = my_name
+if username.length >= 4 or username.include?("!")
+  puts "valid username"
+end
+
+unless user_name == "hnm"
+  puts "you're not hnm"
+end  
+
+
+# ******** #
+# METHODS. #
+# ******** #
+
+def create_full_name(first_name, last_name)
+  return "blah blah" if false
+  puts "#{first_name} #{last_name}"
+  "Anthony Dasan" # last line is default returned
+  5 > 3
+end
+
+full_name = create_full_name("Bob", "Lukas")
+puts (full_name) #true
+
+# 1. write a method that returns:
+#"if you were as old as your name is long, you would be X years old!"
+def calculate_age(your_name)
+    "if you were as old as your name is long, you would be #{your_name.length} years old!"
+end
+puts calculate_age("hsx")
+
+# 2. write a method that accepts 3 arguments (all numbers) and returns the largest one
+def calculate_max(a,b,c)
+  max = (a > b) ? a : b
+  max = (c > max) ? c : max
+  return max
+end
+
+puts calculate_max(1,2,3)
