@@ -1,4 +1,40 @@
+# ********** #
+# VARIABLES. #
+# ********** #
 
+# Variable assignment
+var_name = "hello world"
+puts var_name
+
+# Strings
+first_name = "Hari"
+last_name = "Subbiah"
+full_name = first_name + ' hnm ' + last_name
+puts full_name
+full_name_dynamic = "my name is #{first_name} #{last_name}"
+puts full_name_dynamic 
+
+# Integers
+age = 25
+
+# Decimals
+pi = 3.14
+
+# Twitter Variables
+user_name = "[name]" # display_name
+user_handle = "[handle]"# handle 
+user_description = "[desc]"# biography
+user_location = "[city], [country]"# location_full
+user_link = "[website]"# external_url
+joined_date = "[date]" # join_date
+profile_pic = "[img]" # profile_avatar_image_url
+user_cover_pic = "[img]"# profile_header_image_url
+
+
+# **************************** #
+# OPERATORS AND CONDITIONALS.  #
+# **************************** #
+  
 number = 7
 puts 7 > 5 # true
 puts number >= 2 * (1+2) #true
@@ -73,3 +109,4 @@ def calculate_max(a,b,c)
 end
 
 puts calculate_max(1,2,3)
+
