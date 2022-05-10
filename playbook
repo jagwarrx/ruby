@@ -110,3 +110,63 @@ end
 
 puts calculate_max(1,2,3)
 
+##########
+# Types. #
+##########
+
+# arrays / lists
+
+people = ["alice", "bob", "cathy", "duncan"]
+
+# puts people[1]
+# puts people[1..3]
+
+# hashes
+
+person1 = 
+  {
+  :person => 'alice',
+  :location => 'US'
+  }
+
+person2 = 
+  {
+  :person => 'alice',
+  :location => 'US'
+  }
+
+people << person1
+people << person2
+# puts people
+# puts people[4][:person]
+
+# person1.stringify_keys
+# invert
+str = "Happy Birthday"
+# str.delete("p")
+# str.delete!("p") # mutative method
+# str.sub substitutes first instance
+# str.sub substitutes all instances
+
+# integer methods
+
+str = "Supercalifragilisticexpialidocious"
+str = str.downcase.chars.sort.uniq.join
+# puts str
+
+##########
+# Loops. #
+##########
+
+names = ["alice", "bob", "cathy"]
+
+names.each do |name| 
+  puts name
+end
+
+numbers = [1, 2, 3, 4, 5]
+
+numbers.each do |number|
+  puts number if number.odd?
+end
+
